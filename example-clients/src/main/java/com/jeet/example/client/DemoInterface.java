@@ -14,7 +14,7 @@ public interface DemoInterface
 	@RequestMapping(value = "/hello",method = RequestMethod.GET)
 	public String hello();
 
-	@RequestMapping(method = RequestMethod.POST, value = "/user", produces = "application/json; charset=UTF-8", headers = "application/vnd.collaborate.template.v1+json")
+	@RequestMapping(method = RequestMethod.POST, value = "/user", produces = "application/json; charset=UTF-8")
 	public UserTO populateUser(UserTO userto);
 
 }
