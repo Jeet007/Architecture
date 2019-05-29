@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: template-service
+  datasource:
+     url: jdbc:h2:mem:testdb
+     driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+---
+spring:
+  profiles: prod
+server:
+  port: 443
+
+---
+spring:
+  profiles: scrum
+server:
+  port: 443
+
+---
+spring:
+  profiles: qa
+server:
+  port: 8080
+
+---
+spring:
+  profiles: uat
+server:
+  port: 443

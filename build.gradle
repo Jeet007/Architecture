@@ -1,0 +1,31 @@
+buildscript {
+    ext {
+        dependencyManagementPlugin = '1.0.4.RELEASE'
+    }
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+}
+
+allprojects {
+    group "com.example"
+    version = "1.0-SNAPSHOT"
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+}
+
+subprojects {
+    apply plugin: "java"
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+}
+
+
+
+
+
